@@ -22,6 +22,11 @@ class CoffeeShopTill {
             }
             arrMenu.push(objItem);
         }
+        objItem = { 
+            name:"Done",
+            value:"Done"
+        }
+        arrMenu.push(objItem);
         return arrMenu;
     }
     takeOrder(arrOrder){
@@ -62,9 +67,11 @@ class Customer{
     }
     addCash(fMoney){
         this.Cash+=fMoney;
+        console.log("Cash added:£" + fMoney.toFixed(2) + "\nBalance:£" + this.Cash.toFixed(2));
     }
     spendCash(fMoney){
-        this.Cash-=fMoney;        
+        this.Cash-=fMoney;
+        console.log("£" + fMoney.toFixed(2) +" spent.\nBalance:£" + this.Cash.toFixed(2));        
     }
 };
 
