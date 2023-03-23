@@ -57,7 +57,7 @@ const doMath=(num1)=>{
         return fn(num1, num2);
     };
 };
-console.log(doMath((7)(4, multiply)));
+//console.log(doMath((7)(4, multiply)));
 
 // // --- Activity 1 ---// our function that just holds a console log
 // const logMsg = () => {
@@ -99,3 +99,4 @@ console.log(doMath((7)(4, multiply)));
 // // the second function is called by adding another set of normal brackets at the end of the first function call
 // // we can then pass a number and function inside of those brackets, in this case either the add, subtract, multiply or divide function
 // console.log(doMaths(2)(3, multiply));
+module.exports={add}
