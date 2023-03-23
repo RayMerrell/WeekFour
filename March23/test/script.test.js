@@ -15,3 +15,12 @@ test("Should be john", ()=>{
 test("Should be 20", ()=>{
     expect(app.obj2prop().age).toEqual(20);
 });
+test("All items in the array should be at least 6 characters long", ()=>{
+    let myArray = app.sixchararray();
+    let str ="";
+    for(let i =0;i<myArray.length;i++){
+        str=myArray[c];
+        console.log(str);
+        expect(str.length).toBeGreaterThanOrEqual(6);
+    }
+})
